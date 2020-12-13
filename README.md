@@ -51,4 +51,12 @@ $ npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/esl
   "arrowParens": "avoid",
   "endOfLine": "lf"
 }
+
 ```
+
+## gitmoji-cli 사용하기
+```properties
+$ npm i -g gitmoji-cli
+```
+
+[깃모지 가이드 클릭!](https://gitmoji.carloscuesta.me/)
