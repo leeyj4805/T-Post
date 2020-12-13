@@ -44,10 +44,12 @@
     "@typescript-eslint/eslint-plugin": "^4.9.1",
     "@typescript-eslint/parser": "^4.9.1",
     "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.2.0",
     "eslint-plugin-react": "^7.21.5",
-    "prettier": "^2.2.1"
+    "prettier": "2.2.1"
   },
   "description": "## 프로젝트 시작 ```properties $ npx create-react-app i-live --template typescript ```",
   "main": "index.js",
