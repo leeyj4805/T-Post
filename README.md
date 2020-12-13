@@ -67,3 +67,8 @@ $ npm i -g gitmoji-cli
 $ npm install --save redux react-redux redux-saga
 $ npm install --save-dev @types/react-redux @types/redux-saga
 ```
+
+## typesafe-actions 사용하기
+```
+$ npm install --save typesafe-actions
+```
