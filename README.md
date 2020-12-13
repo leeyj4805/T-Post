@@ -60,3 +60,10 @@ $ npm i -g gitmoji-cli
 ```
 
 [깃모지 가이드 클릭!](https://gitmoji.carloscuesta.me/)
+
+
+## redux, redux-saga 사용하기
+```properties
+$ npm install --save redux react-redux redux-saga
+$ npm install --save-dev @types/react-redux @types/redux-saga
+```
