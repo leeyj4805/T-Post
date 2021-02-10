@@ -1,4 +1,4 @@
-# I-LIVE 프로젝트
+# T-Post 프로젝트
 
 ## 프로젝트 시작
 ```properties
