@@ -1,0 +1,107 @@
+.body {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #f8f9fe;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif,"NanumSquareB";
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 400px;
+}
+
+.LoginHeader{
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.1px;
+    color: #868686;
+    padding-left: 131px;
+}
+.LoginHeader::before{
+    content:"";  
+    position:absolute; 
+    background: url('C:\Users\user\Documents\T-Post\src\page\images\pngwing.com.png')center no-repeat; 
+    background-size: 67px 79%;
+    display: block;
+    width: 17%;
+    height: 53px;
+    z-index:0;
+    top: -24px;
+    left: 53px;
+}
+.logo {
+    position: relative;
+    width: 400px;
+    height: 450px;
+}
+.logo::before {
+    content:"";  
+    position:absolute;  
+    bottom : 0;
+    left: 0px;
+    background: url('C:\Users\user\Documents\T-Post\src\page\images\t-logo.png')center no-repeat; 
+    background-size:cover;
+    display:block; 
+    width:429px; 
+    height:129px;
+    z-index:0;
+}
+
+.blue{
+    width: 201px;
+    height: 64px;
+    padding: 23px 35px 23px 31px;
+    border-radius: 30px;
+    background-image: linear-gradient(to top, #015eea, #00c0fa);
+    font-family: GmarketSansTTF;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #f8f9fe;
+    border : 0;
+    outline: 0;
+  }
+.white {
+    width: 200px;
+    height: 64px;
+    padding: 23px 40px 22px 44px;
+    border-radius: 30px;
+    box-shadow: 15.6px 3.6px 27px 0 rgba(101, 101, 101, 0.14);
+    border: solid 0.4px #e9e9e9;
+    background-color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: #5e5e5e;
+    border : 0;
+    outline: 0;
+}
+.button-Group{
+    margin: 42px 25px 0 25px;
+}

@@ -11,9 +11,9 @@ $ npm i -g gitmoji-cli
 ```
 [깃모지 가이드 클릭!](https://gitmoji.carloscuesta.me/)
 
-## Ant Design 사용하기
+## chakra-ui 사용하기
 ```properties
-$ npm install antd
+$ npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 ```
 
 ## axios 사용하기
