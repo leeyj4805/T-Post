@@ -1,6 +1,3 @@
-import "react-app-polyfill/ie11";
-import "react-app-polyfill/stable";
-
 import React, { lazy } from "react";
 import { Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
