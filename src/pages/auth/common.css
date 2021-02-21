@@ -38,7 +38,7 @@
 .LoginHeader::before{
     content:"";  
     position:absolute; 
-    background: url('C:\Users\user\Documents\T-Post\src\page\images\pngwing.com.png')center no-repeat; 
+    background: url('../../assets/images/pngwing.com.png')center no-repeat; 
     background-size: 67px 79%;
     display: block;
     width: 17%;
@@ -57,7 +57,7 @@
     position:absolute;  
     bottom : 0;
     left: 0px;
-    background: url('C:\Users\user\Documents\T-Post\src\page\images\t-logo.png')center no-repeat; 
+    background: url('../../assets/images/t-logo.png')center no-repeat; 
     background-size:cover;
     display:block; 
     width:429px; 
