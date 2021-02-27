@@ -1,17 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button, ButtonGroup } from "@chakra-ui/react";
 import logo from "../../assets/images/t-logo.png";
 import "./login.scss";
-
-const response_type = "code";
-const client_id = process.env.REACT_APP_CLIENT_ID;
-const scope = "user:read:email user_read moderation:read";
-const redirect_uri = window.location.origin;
+import useFetch from "../../hooks/useFetch";
 
 function Login() {
+  const {
+    fetch: userInfoFetch,
+    data: userInfoData,
+    error: userInfoError,
+  } = useFetch({
+    method: "GET",
+    url: `${process.env.REACT_APP_SERVER_URL}/userinfo?state=1234`,
+  });
+
   const handleLogin = () => {
-    window.location.href = `https://id.twitch.tv/oauth2/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}&scope=${scope}`;
+    window.location.href = `${
+      process.env.REACT_APP_SERVER_URL
+    }/oauth2/authorization/twitch?original_request=${
+      window.location.origin + "/login"
+    }`;
   };
+
+  useEffect(() => {
+    console.log("초기 렌더링 데이터 요청");
+    userInfoFetch();
+  }, []);
+
+  useEffect(() => {
+    console.log(userInfoData, userInfoError);
+  }, [userInfoData, userInfoError]);
 
   return (
     <div className="Login">
