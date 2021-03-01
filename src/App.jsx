@@ -1,15 +1,28 @@
 import React, { lazy } from "react";
 import { Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Spin } from "antd";
+import { CircularProgress, Flex } from "@chakra-ui/react";
 
 const HomePage = lazy(() => import("./pages/home/home"));
 const LoginPage = lazy(() => import("./pages/auth/login"));
 
+const PageLoading = () => {
+  return (
+    <Flex justifyContent="center" alignItems="center" height="100%">
+      <CircularProgress
+        isIndeterminate
+        thickness="6px"
+        size="150px"
+        color="#4a65f6"
+      />
+    </Flex>
+  );
+};
+
 export default function App() {
   return (
     <Router>
-      <Suspense fallback={<Spin size="large" />}>
+      <Suspense fallback={<PageLoading />}>
         <Switch>
           <Route path="/" component={HomePage} exact />
           <Route path="/login" component={LoginPage} />

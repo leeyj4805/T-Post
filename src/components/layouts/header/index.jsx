@@ -1,5 +1,5 @@
 import React from "react";
-import { Link as RouteLink } from "react-router-dom";
+import { Link as RouteLink, useHistory } from "react-router-dom";
 import {
   Box,
   Button,
@@ -18,6 +18,12 @@ import { EmailIcon, Search2Icon } from "@chakra-ui/icons";
 import logo from "../../../assets/images/t-logo.png";
 
 function Header({ isLogIn = false }) {
+  const history = useHistory();
+
+  const onLoginBtnClick = () => {
+    history.push("/login");
+  };
+
   return (
     <Flex width="100%" bg="white">
       <Image
@@ -94,7 +100,13 @@ function Header({ isLogIn = false }) {
             로그아웃
           </Button>
         ) : (
-          <Button colorScheme="blue" size="sm" mr="10px" px="30px">
+          <Button
+            onClick={onLoginBtnClick}
+            colorScheme="blue"
+            size="sm"
+            mr="10px"
+            px="30px"
+          >
             로그인
           </Button>
         )}
