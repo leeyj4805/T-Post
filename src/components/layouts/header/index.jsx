@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { EmailIcon, Search2Icon } from "@chakra-ui/icons";
 import logo from "../../../assets/images/t-logo.png";
+import "./index.scss";
 
 function Header({ isLogIn = false }) {
   const history = useHistory();
@@ -43,8 +44,8 @@ function Header({ isLogIn = false }) {
           <Input placeholder="검색" />
         </InputGroup>
         <Spacer />
-        <LinkBox px="4" h="100%" cursor="pointer" pos="relative" role="group">
-          <Center h="100%">
+        <LinkBox px="4" h="100%" cursor="pointer" pos="relative" role="group"mr="90px">
+          <Center h="100%" >
             <RouteLink to="/login">TODAY</RouteLink>
           </Center>
           <Box
@@ -60,7 +61,7 @@ function Header({ isLogIn = false }) {
             }}
           />
         </LinkBox>
-        <LinkBox px="4" h="100%" cursor="pointer" pos="relative" role="group">
+        <LinkBox px="4" h="100%" cursor="pointer" pos="relative" role="group" mr="90px">
           <Center h="100%">
             <RouteLink to="/login">편지목록</RouteLink>
           </Center>
@@ -81,7 +82,7 @@ function Header({ isLogIn = false }) {
           icon={<EmailIcon boxSize="8" color="blue.200" />}
           mx="2"
           bg="white"
-          cursor="pointer"
+          cursor="pointer" mr="40px"
         >
           <AvatarBadge
             borderColor="white"
@@ -96,7 +97,7 @@ function Header({ isLogIn = false }) {
           </AvatarBadge>
         </Avatar>
         {isLogIn ? (
-          <Button colorScheme="blue" size="sm" mr="10px" px="30px">
+          <Button colorScheme="blue" size="sm" mr="30px" px="30px">
             로그아웃
           </Button>
         ) : (
@@ -104,7 +105,7 @@ function Header({ isLogIn = false }) {
             onClick={onLoginBtnClick}
             colorScheme="blue"
             size="sm"
-            mr="10px"
+            mr="30px"
             px="30px"
           >
             로그인

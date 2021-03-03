@@ -24,7 +24,7 @@ export default function App() {
     <Router>
       <Suspense fallback={<PageLoading />}>
         <Switch>
-          <Route path="/" component={HomePage} exact />
+          <Route path="/home" component={HomePage} exact />
           <Route path="/login" component={LoginPage} />
           <Route path="*" component={() => <div>Not Found</div>} />
         </Switch>
