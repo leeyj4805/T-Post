@@ -1,0 +1,23 @@
+.headerArea {
+  width: 100%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 99;
+  background-color: #fff;
+  border-bottom:1px solid #d9d9d9;
+  .container{
+    height: 85px;
+    max-width: 1407px;
+    margin: 0 auto;
+    position: relative;
+    .titleLogo{
+    width: 123px;
+    position: absolute;
+    left: 0;
+    top: 21px;
+
+    }
+  }  
+}
+
