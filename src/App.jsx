@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { CircularProgress, Flex } from "@chakra-ui/react";
 
 const HomePage = lazy(() => import("./pages/home/home"));
+const MyPage = lazy(() => import("./pages/Photo/Photo"));
 const LoginPage = lazy(() => import("./pages/auth/login"));
 
 const PageLoading = () => {
@@ -25,6 +26,7 @@ export default function App() {
       <Suspense fallback={<PageLoading />}>
         <Switch>
           <Route path="/home" component={HomePage} exact />
+          <Route path="/mypage" component={MyPage} exact />
           <Route path="/login" component={LoginPage} />
           <Route path="*" component={() => <div>Not Found</div>} />
         </Switch>
