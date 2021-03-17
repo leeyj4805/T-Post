@@ -7,6 +7,7 @@ const HomePage = lazy(() => import("./pages/home/home"));
 const Photo = lazy(() => import("./pages/Photo/Photo"));
 const Profile = lazy(() => import("./pages/Profile/Profile"));
 const LoginPage = lazy(() => import("./pages/auth/login"));
+const Mypage = lazy(() => import("./pages/Mypage/Mypage"));
 
 const PageLoading = () => {
   return (
@@ -26,9 +27,10 @@ export default function App() {
     <Router>
       <Suspense fallback={<PageLoading />}>
         <Switch>
-          <Route path="/home" component={HomePage} exact />
-          <Route path="/Photo" component={Photo} exact />
-          <Route path="/Profile" component={Profile} exact />
+          <Route path="/home" component={HomePage} />
+          <Route path="/Photo" component={Photo} />
+          <Route path="/Profile" component={Profile} />
+          <Route path="/Mypage" component={Mypage} />
           <Route path="/login" component={LoginPage} />
           <Route path="*" component={() => <div>Not Found</div>} />
         </Switch>
