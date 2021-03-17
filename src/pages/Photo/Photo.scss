@@ -1,0 +1,66 @@
+.Photo{
+    position: relative;
+    width: 400px;
+    height: 100%;
+}
+
+.Photo::before {
+    content: "";
+    position: absolute;
+    background: url('../../assets/images/profile.png')center no-repeat;
+    background-size: 255px 255px;
+    display: block;
+    width: 255px;
+    height: 255px;
+    z-index: 0;
+    top: 120px;
+    left: 53px;
+}
+
+.PhotoHeader{
+     position: absolute;
+     font-family: KoPubDotum;
+     font-weight: bold;
+     font-stretch: normal;
+     font-style: normal;
+     line-height: normal;
+     color: #313131;
+     font-size: 34px;
+     letter-spacing: -0.85px;
+     top: 389px;
+     left: 91px;
+}
+.PhotoHeaderSmall{
+    font-family: KoPubDotum;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.63px;
+    color: #313131;
+    letter-spacing: -0.85px;
+}
+.Subscriber{
+    position: absolute;
+    font-family: KoPubDotum;
+    font-size: 18.5px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.46px;
+    text-align: center;
+    color: #666666;
+    font-weight: 600;
+    top: 441px;
+    left: 109px;
+    float: left;
+}
+
+.number{
+    float: right;
+}
+
+.ml{
+    margin-left:20px;
+}
