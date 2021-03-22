@@ -1,4 +1,4 @@
-.user{
+.user {
     margin: 0 207px 32px 3px;
     font-family: NanumSquareEB;
     font-size: 26px;
@@ -9,4 +9,39 @@
     letter-spacing: -1.9px;
     text-align: left;
     color: #333333;
+}
+
+.userBox {
+
+    width: 690px;
+    height: 408px;
+    border-radius: 30px;
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+    margin-top: 30px;
+
+    .userheader {
+        position: relative;
+        width: 688px;
+        height: 83px;
+        margin: 0 0 26px;
+        padding: 31px 27px 29px 40px;
+        border-radius: 30px 30px 0 0;
+        background: #5689fe;
+        font-family: NanumSquareB;
+        font-size: 21px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -1.2px;
+        text-align: left;
+        color: #ffffff;
+    }
+    .css-k6d2az{
+        color: #ffffff;
+        position: absolute;
+        right: 28px;
+        bottom: 28px;
+    }
 }

@@ -4,17 +4,32 @@
     height: 100%;
 }
 
-.Photo::before {
-    content: "";
-    position: absolute;
-    background: url('../../assets/images/profile.png')center no-repeat;
-    background-size: 255px 255px;
-    display: block;
+.MainPhoto {
+    position: relative;
+    background: url('../../assets/images/profile.png') no-repeat;
     width: 255px;
     height: 255px;
-    z-index: 0;
-    top: 120px;
-    left: 53px;
+    top: 139px;
+    left: 69px;
+
+}
+
+.MainPhoto:hover {
+    opacity: 0.3;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    
+}
+
+.MainPhoto p {
+    font-size: 18px;
+    font-family: KoPubDotum;
+    font-weight: bold;
+    font-stretch: normal;
+    color: #ffffff;
+    position: absolute;
+    top: 110px;
+    left: 59px;
 }
 
 .PhotoHeader{
@@ -64,3 +79,4 @@
 .ml{
     margin-left:20px;
 }
+
