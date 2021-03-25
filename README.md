@@ -26,3 +26,9 @@ $ npm install axios
 $ npm install --save redux react-redux redux-saga
 $ npm install --save-dev @types/react-redux @types/redux-saga
 ```
+
+## .env 파일 내용
+```
+REACT_APP_SERVER_URL=http://dev.api.tpost.lol/
+REACT_APP_CLIENT_ID=zl7tvg8hubkoevc6kx0cgkty18nkgt
+```
