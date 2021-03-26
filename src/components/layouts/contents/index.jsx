@@ -5,7 +5,6 @@ import {
   Tag,
   TagLabel,
   TagCloseButton,
-  TagRightIcon,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import "./index.scss";

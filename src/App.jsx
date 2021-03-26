@@ -8,6 +8,7 @@ const Photo = lazy(() => import("./pages/Photo/Photo"));
 const Profile = lazy(() => import("./pages/Profile/Profile"));
 const LoginPage = lazy(() => import("./pages/auth/login"));
 const Mypage = lazy(() => import("./pages/Mypage/Mypage"));
+const Email = lazy(() => import("./pages/Email/Email"));
 
 const PageLoading = () => {
   return (
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/Photo" component={Photo} />
           <Route path="/Profile" component={Profile} />
           <Route path="/Mypage" component={Mypage} />
+          <Route path="/Email" component={Email} />
           <Route path="/login" component={LoginPage} />
           <Route path="*" component={() => <div>Not Found</div>} />
         </Switch>
